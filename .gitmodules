@@ -1,0 +1,18 @@
+[submodule "order-model"]
+	path = order-model
+	url = https://github.com/juniorjrc/order-model.git
+[submodule "order-service"]
+	path = order-service
+	url = https://github.com/juniorjrc/order-service.git
+[submodule "order-processor"]
+	path = order-processor
+	url = https://github.com/juniorjrc/order-processor.git
+[submodule "order-notifier"]
+	path = order-notifier
+	url = https://github.com/juniorjrc/order-notifier.git
+[submodule "order-api-gateway"]
+	path = order-api-gateway
+	url = https://github.com/juniorjrc/order-api-gateway.git
+[submodule "order-service-discovery"]
+	path = order-service-discovery
+	url = https://github.com/juniorjrc/order-service-discovery.git
