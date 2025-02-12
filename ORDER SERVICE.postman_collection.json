@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "67ab01db-6378-44bc-b75a-a544c848e6d8",
+		"name": "ORDER SERVICE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6642725"
+	},
+	"item": [
+		{
+			"name": "[GET] - Order by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/order/:orderId",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"order",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] - Create new order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": 1,\n    \"checksum\": \"jsggLbwb2rCY4TQsPUIk0FNJNmEQ1bgQfA7R8iy1638=\",\n    \"products\": [\n        {\n            \"productId\": 1,\n            \"quantity\": 1\n        },\n                {\n            \"productId\": 2,\n            \"quantity\": 1\n        },\n        {\n            \"productId\": 4,\n            \"quantity\": 1\n        },\n        {\n            \"productId\": 15,\n            \"quantity\": 1\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/order",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] - Get all orders by customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": 1,\n    \"checksum\": \"jsggLbwb2rCY4TQsPUIk0FNJNmEQ1bgQfA7R8iy1638=\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/order",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] - All products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": 1,\n    \"checksum\": \"jsggLbwb2rCY4TQsPUIk0FNJNmEQ1bgQfA7R8iy1638=\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/product",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
