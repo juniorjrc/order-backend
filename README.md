@@ -6,12 +6,12 @@ Project developed for order management, using a distributed architecture based o
 
 The project is divided into the following modules:
 
-- **order-api-gateway**: Responsible for routing requests between microservices.
-- **order-model**: Defines data models shared among microservices.
-- **order-notifier**: Handles sending notifications related to orders for product B.
-- **order-processor**: Processes purchase orders calculating values and manages their lifecycle.
-- **order-service**: Manages the main operations of the order system and provides services for consulting orders and products by customer.
-- **order-service-discovery**: Implements service registration and discovery.
+- [**order-api-gateway**](https://github.com/juniorjrc/order-api-gateway) - Responsible for routing requests between microservices.
+- [**order-model**](https://github.com/juniorjrc/order-model) - Defines data models shared among microservices.
+- [**order-notifier**](https://github.com/juniorjrc/order-notifier) - Handles sending notifications related to orders for product B.
+- [**order-processor**](https://github.com/juniorjrc/order-processor) - Processes purchase orders calculating values and manages their lifecycle.
+- [**order-service**](https://github.com/juniorjrc/order-service) - Manages the main operations of the order system and provides services for consulting orders and products by customer.
+- [**order-service-discovery**](https://github.com/juniorjrc/order-service-discovery) - Implements service registration and discovery.
 
 ## Architecture of the order creation process
 
@@ -59,6 +59,7 @@ The project is divided into the following modules:
 ## Postman Collection
 
 ![POSTMAN image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*UjfpcPx0p410o13vpB7mlQ.png)
+
 - [Collection](./ORDER%20SERVICE.postman_collection.json)
 - [Environment Variables](ORDER%20SERVICE.postman_environment.json)
 
